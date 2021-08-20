@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "opensans-bold", sans-serif;
+  color: white;
+}
+.nav-main {
+  background: url("../images/header-background.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+nav {
+  padding: 30px 10px;
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
+  background: #2b2b2b;
+}
+.nav-main nav ul,
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-main nav ul li a,
+.main ul li a,
+.about-text h2 {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.nav-main nav ul li:hover{
+    transform: translateY( 10px);
+}
+.nav-main nav ul li a:hover {
+  cursor: pointer;
+  color: orangered;
+
+}
+.main {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  padding: 30px;
+  position: relative;
+}
+.main p,
+.main ul {
+  margin-top: 60px;
+}
+.main h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main h1 {
+  animation: slideLeft 5s infinite;
+  /* animation: slideLeft 1.5s steps(30) infinite; */
+}
+.main p {
+  animation: slideup 1.5s ease-out;
+}
+@keyframes slideup {
+  0% {
+    font-size: 1.2em;
+  }
+  100% {
+    transform: translateY(-15px);
+    font-size: 2em;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    letter-spacing: 0.5em;
+    color: transparent;
+  }
+  100% {
+    letter-spacing: initial;
+    color: orange;
+  }
+}
+.main p,
+.about-text p {
+  color: #a8a8a8;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+}
+.svg-inline--fa {
+  width: 35px;
+}
+span {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+span:hover {
+  background-color: teal;
+  opacity: 0.4;
+}
+.fa-chevron-down {
+  width: 20px;
+}
+.about-me {
+  background: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 250px;
+}
+.about-me-profile {
+  width: 35%;
+}
+.about-me .about-me-profile img {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 650px;
+}
+.about-me article {
+  width: 65%;
+  padding-left: 100px;
+}
+.about-text-container {
+  display: flex;
+  width: 60%;
+  margin-top: 2em;
+}
+
+.about-text {
+  width: 60%;
+}
+.about-text p {
+  margin-top: 10px;
+}
+.edu-skills-experience {
+  padding: 60px 0;
+  width: 100%;
+  margin: auto;
+  box-shadow: 1px 2px 2px lightgrey;
+  background-color: whitesmoke;
+}
+.Education-container {
+  /* margin: 0px 80px; */
+  width: 70%;
+  margin: auto;
+  border: none;
+}
+.Education-container h2,
+.experience-container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+}
+td,
+.flex-item ul li {
+  padding: 20px 0px;
+  font-size: 18px;
+  word-spacing: normal;
+  letter-spacing: 1px;
+}
+.flex-container h3 {
+  margin-top: 10px;
+}
+tr .data {
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.experience-container {
+  width: 70%;
+  margin: auto;
+  color: black;
+  padding-top: 30px;
+}
+
+.strong {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-item ul {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: disc;
+}
+.download {
+  margin-top: 40px;
+}
+.download a {
+  /* display: flex; */
+  text-decoration: none;
+  color: white;
+  background-color: #7a7a7a;
+  padding: 15px 60px;
+  font-size: 1.2em;
+}
+.fa-download {
+  height: 20px;
+}
+.harmburger {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.harmburger-btn {
+  width: 40px;
+  height: 6px;
+  position: absolute;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.harmburger-btn::before,
+.harmburger-btn::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.harmburger-btn::before {
+  transform: translateY(-16px);
+}
+.harmburger-btn::after {
+  transform: translateY(16px);
+}
+.harmburger.open .harmburger-btn {
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+.harmburger.open .harmburger-btn::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.harmburger.open .harmburger-btn::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+footer:hover {
+  cursor: pointer;
+}
+footer a img {
+  height: 60px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me .about-me-profile img {
+    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .about-me {
+    padding: 80px 0 100px;
+  }
+  .about-me .about-me-profile {
+    width: 30%;
+  }
+  .about-me article {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+  .download a {
+    /* display: flex; */
+    padding: 10px;
+    font-size: 0.5em;
+  }
+  .aboutText {
+    width: 55%;
+  }
+  .Education-container,
+  .experience-container {
+    width: 90%;
+  }
+  .harmburger {
+    display: flex;
+  }
+  .list-nav {
+    display: none;
+  }
+  .Nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+  .Nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 0;
+  }
+  .nav-main nav ul li {
+    margin-bottom: 10px;
+  }
+  .nav-main nav ul li a {
+    font-size: 15px;
+  }
+
+  /* .edu-skills-experience {
+        display: none;
+    }
+    .about-me {
+        display: none;
+    } */
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-top: 150px;
+  }
+  .main h1 {
+    font-size: 35px;
+  }
+  .about-me-profile {
+    display: none;
+  }
+  .edu-skills-experience h2 {
+    text-align: center;
+  }
+  .about-text-container {
+    flex-direction: column;
+  }
+  .aboutText {
+    width: 100%;
+  }
+  #down {
+    display: none;
+  }
+  .svg-inline--fa {
+    width: 18px;
+  }
+}
