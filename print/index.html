@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> print-of-name</title>
+</head>
+<body>
+    <h1 class="name"  style="text-align: center; text-transform: uppercase;"> </h1>
+
+    <script>
+        let myName = document.querySelector(".name");
+console.log(myName)
+const print = (name) => {
+//   document.write(name);
+myName.innerHTML = name
+};
+
+print("Agbaje Abidemi Asiat");
+
+    </script>
+</body>
+</html>
