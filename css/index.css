@@ -1,15 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "opensans-bold", sans-serif;
+    font-family: 'Klee One', cursive;
   color: white;
 }
 .nav-main {
-  background: url("../images/header-background.jpg");
-  background-size: cover;
+  background: url("../images/header-background.jpg") no-repeat;
+  background-size: co;
   height: 100vh;
   position: relative;
 }
@@ -65,7 +70,7 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
 }
-.main h1 {
+ .main h1 {
   animation: slideLeft 5s infinite;
   /* animation: slideLeft 1.5s steps(30) infinite; */
 }
@@ -90,7 +95,7 @@ ul {
     letter-spacing: initial;
     color: orange;
   }
-}
+} 
 .main p,
 .about-text p {
   color: #a8a8a8;
@@ -151,6 +156,10 @@ span:hover {
 }
 .about-text p {
   margin-top: 10px;
+}
+.aboutText p a {
+    text-decoration: none;
+    color: orange;
 }
 .edu-skills-experience {
   padding: 60px 0;
@@ -278,6 +287,32 @@ footer a img {
   height: 60px;
   margin: 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .nav-main {
+        height: 120vh;
+    }
+   .about-me .about-me-profile img {
+       margin-left: 50px;
+   }
+   .about-me article {
+       width: 80%;
+       padding-left: 30px;
+   }
+   .about-text {
+       width: 95%;
+   }
+   .about-text-container {
+       width: 95%;
+   }
+   .download a {
+       padding: 10px;
+
+   }
+   .aboutText {
+       width: 50%;
+   }
+
+}
 
 @media only screen and (max-width: 768px) {
   .about-me .about-me-profile img {
@@ -325,9 +360,9 @@ footer a img {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: black;
     opacity: 0.8;
     margin-top: 10px;
+    background-color: transparent;
   }
   .Nav ul {
     display: flex;
@@ -374,4 +409,10 @@ footer a img {
   .svg-inline--fa {
     width: 18px;
   }
+  .download a {
+    /* display: flex; */
+    padding: 20px 80px;
+    font-size: 0.8em;
+  }
+  
 }
