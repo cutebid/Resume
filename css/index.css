@@ -287,7 +287,7 @@ footer a img {
   height: 60px;
   margin: 10px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 1300px){
     .nav-main {
         height: 120vh;
     }
