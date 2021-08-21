@@ -14,15 +14,15 @@ body {
 }
 .nav-main {
   background: url("../images/header-background.jpg") no-repeat;
-  background-size: co;
+  background-size: cover;
   height: 100vh;
   position: relative;
 }
 nav {
   padding: 30px 10px;
-  position: sticky;
-  top: 0px;
-  bottom: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #2b2b2b;
 }
 .nav-main nav ul,
@@ -57,8 +57,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
   padding: 30px;
+  padding-top: 250px;
   position: relative;
 }
 .main p,
@@ -290,6 +290,9 @@ footer a img {
 @media only screen and (min-width: 768px) and (max-width: 1300px){
     .nav-main {
         height: 120vh;
+    }
+    nav {
+       padding: 10px 10px;
     }
    .about-me .about-me-profile img {
        margin-left: 50px;
