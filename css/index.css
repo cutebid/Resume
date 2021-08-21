@@ -70,11 +70,12 @@ ul {
   font-weight: bold;
 }
  .main h1 {
-  animation: slideLeft 5s infinite;
+  animation: slideLeft 3s ease-out;
+  color: orange;
   /* animation: slideLeft 1.5s steps(30) infinite; */
 }
 .main p {
-  font-size: 1.4em;
+  font-size: 1.2em;
   animation: slideup 1.5s ease-out;
 }
 @keyframes slideup {
@@ -93,7 +94,7 @@ ul {
   }
   100% {
     letter-spacing: initial;
-    color: orange;
+    color: white;
   }
 } 
 .main p,
@@ -235,7 +236,7 @@ tr .data {
   width: 60px;
   height: 60px;
   position: relative;
-  top: 5px;
+  top: 10px;
   left: 5px;
   display: none;
   justify-content: center;
@@ -427,3 +428,27 @@ footer a img {
   }
   
 }
+/* @media only screen and (max-width: 360px) {
+  @keyframes slideup {
+  0% {
+    font-size: 1.2em;
+  }
+  100% {
+    transform: translateY(-15px);
+    font-size: 2em;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    letter-spacing: 0.5em;
+    color: transparent;
+  }
+  100% {
+    letter-spacing: initial;
+    color: orange;
+  }
+  body {
+    background-color: red;
+  }
+}
+} */
