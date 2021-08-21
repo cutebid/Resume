@@ -11,7 +11,7 @@ body {
   color: white;
 }
 .nav-main {
-  background: url("../images/header-background.jpg") no-repeat;
+  background: url("../images/scg-canvas-background-animation-24.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -74,6 +74,7 @@ ul {
   /* animation: slideLeft 1.5s steps(30) infinite; */
 }
 .main p {
+  font-size: 1.4em;
   animation: slideup 1.5s ease-out;
 }
 @keyframes slideup {
@@ -364,7 +365,7 @@ footer a img {
     display: none;
   }
   .Nav {
-    display: inline;
+    display: block;
     position: absolute;
     top: -15px ;
     right: 0;
