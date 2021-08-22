@@ -285,6 +285,84 @@ tr .data {
 .harmburger.open .harmburger-btn::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 30px auto;
+ 
+}
+.skills h2 {
+  margin-bottom: 20px;
+}
+.highlight{
+  width: 60%;
+  height: 36px;
+  border-radius: 5px;
+   background-color: grey;
+}
+.highlight-item {
+  background: #2b2b2b; 
+  opacity: 0.4;
+}
+
+.highlight-item1 {
+  width: 90%;
+  height: 36px;
+  border: none;
+}
+.highlight-item2 {
+  width: 80%;
+  height: 36px;
+  border: none;
+}
+.highlight-item3 {
+  width: 70%;
+  height: 36px;
+  border: none;
+}
+.hightlight-item4 {
+  width: 40%;
+  height: 36px;
+  border: none;
+}
+.hightlight-item5 {
+  width: 80%;
+  height: 36px;
+  border: none;
+}
+.work {
+  width: 70%;
+  margin: auto;
+  padding: 30px 0;
+}
+.work h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.work-container {
+  margin: 10px;
+  overflow: hidden;
+
+}
+.work-container a {
+  mix-blend-mode: multiply;
+}
+.work-container a img {
+  object-fit: cover;
+  opacity: 0.8;
+}
+.work-container a img:hover {
+  opacity: 1;
+  transform: translate(-10px);
+  background-color: black;
+
+}
 footer {
   display: flex;
   justify-content: space-evenly;
