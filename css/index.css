@@ -125,7 +125,7 @@ span {
   justify-content: center;
   position: absolute;
   left: 50%;
-  top: 22%;
+  top: calc(100vh - 100px);
 }
 span:hover {
   background-color: teal;
