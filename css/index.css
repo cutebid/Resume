@@ -334,16 +334,16 @@ footer a img {
     width: 120px;
     height: 120px;
   }
-  .nav-main {
+  /* .nav-main {
     height: calc(70vh - 80px);
-  }
+  } */
   .nav-harmburger {
     justify-content: flex-start;
     padding: 10px 0;
   }
 
   .main {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .about-me {
     padding: 80px 0 100px;
@@ -400,7 +400,7 @@ footer a img {
     font-size: 15px;
   }
   span {
-   top: 21%;
+   top: 30%;
  } 
  .main p {
    margin-top: 40px;
@@ -409,9 +409,9 @@ footer a img {
 
 }
 @media only screen and (max-width: 600px) {
-  .main {
-    padding-top: 60px;
-  }
+  /* .main {
+    padding-top: 150px;
+  } */
   .main h1 {
     font-size: 20px;
   }
