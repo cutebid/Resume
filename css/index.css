@@ -484,7 +484,9 @@ footer a img {
    margin-top: 40px;
    font-size: 1em;
  } 
-
+ .highlight {
+   width: 100%;
+ }
 }
 @media only screen and (max-width: 600px) {
   /* .main {
