@@ -16,6 +16,7 @@ body {
   justify-content: center;
   background: #2b2b2b; 
   position: sticky;
+  z-index: 999;
   top: 0;
   left: 0;
 }
@@ -124,7 +125,7 @@ span {
   justify-content: center;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 22%;
 }
 span:hover {
   background-color: teal;
