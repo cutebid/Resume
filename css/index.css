@@ -346,8 +346,11 @@ tr .data {
 
 }
 .work-container {
+  width: 200px;
   margin: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
 }
 .work-container a {
@@ -365,17 +368,20 @@ tr .data {
 }
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 30px 0;
   flex-wrap: wrap;
 }
-footer:hover {
+footer h2 {
+  color: orange;
+}
+/* footer:hover {
   cursor: pointer;
 }
 footer a img {
   height: 60px;
   margin: 10px;
-}
+} */
 @media only screen and (min-width: 769px) and (max-width: 1300px){
    /* .nav-main {
         height: 120vh;
@@ -517,6 +523,9 @@ footer a img {
     /* display: flex; */
     padding: 20px 80px;
     font-size: 0.8em;
+  }
+  .nav ul {
+    margin: 5px;
   }
   
 }
