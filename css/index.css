@@ -369,6 +369,7 @@ tr .data {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px 0;
   flex-wrap: wrap;
 }
